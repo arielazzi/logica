@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+
+	var ano = 2016;
+	function pulaLinha(compare)
+	{
+		if (compare == undefined)
+			compare = 1;
+
+		for (i = 0; i < compare; i++)
+			document.write("<br>");
+	}
+
+	function calculaImc(peso, altura)
+	{
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+	
+
+	var nome = prompt("Informe o seu nome:");
+	var altura = prompt(nome + ", Informe a sua altura:");
+	var peso = prompt(nome + ", Informe o seu peso:");
+
+	var imc = calculaImc(peso, altura);
+
+	document.write("O seu IMC é "+imc);
+	
+</script>

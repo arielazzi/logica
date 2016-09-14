@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+
+<script>
+
+	var ano = 2016;
+	function pulaLinha(compare)
+	{
+		if (compare == undefined)
+			compare = 1;
+
+		for (i = 0; i < compare; i++)
+			document.write("<br>");
+	}
+
+	var vitorias = parseInt(prompt("Entre com o número de vitórias"));
+	var empates = parseInt(prompt("Entre com o número de empates"));
+	// var vitorias = prompt("Entre com o número de derrotas");
+	
+	var pontos = (vitorias * 3) + empates;
+
+	document.write("Os pontos do seu time é "+pontos);
+</script>

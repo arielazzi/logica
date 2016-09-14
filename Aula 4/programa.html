@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+
+	var ano = 2016;
+	function pulaLinha(compare)
+	{
+		if (compare == undefined)
+			compare = 1;
+
+		for (i = 0; i < compare; i++)
+			document.write("<br>");
+	}
+	document.write("Flávio tem " + (ano - 1977) + " anos");
+	pulaLinha(5);
+	document.write("Joaquim tem " + (ano - 1995) + " anos");
+	pulaLinha(1);
+	document.write("Barney tem " + (ano - 1971) + " anos");
+	pulaLinha(1);
+
+	var idadeFlavio  = 39;
+	var idadeJoaquim = 20;
+	var idadeBarney  = 41;
+	media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+	document.write("A média das idades é " + Math.round(media));
+	pulaLinha(1);
+
+	var nome = "Flávio";
+
+	document.write("A idade de " + nome + "é " + idadeFlavio + " anos");
+</script>
