@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<script>
+
+	var ano = 2016;
+	function pulaLinha(compare)
+	{
+		if (compare == undefined)
+			compare = 1;
+
+		for (i = 0; i < compare; i++)
+			document.write("<br>");
+	}
+
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++)
+	{
+		document.write(7 * multiplicador);
+		pulaLinha(2);
+	}
+</script>
