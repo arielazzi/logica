@@ -12,13 +12,13 @@
 			document.write("<br>");
 	}
 
-	var numeroPensado = 5;
+	var numeroPensado = Math.round(Math.random() * 10);
 	var chute = parseInt(prompt("Digite o seu chute!"));
 
 
 	if (numeroPensado == chute)
 		document.write("Você acertou!");
 	else
-		document.write("ERRRRRRRRRRRRRO!");
+		document.write("Você errou! o numero pensado foi "+numeroPensado);
 	
 </script>
