@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script>
+
+	var ano = 2016;
+	function pulaLinha(compare)
+	{
+		if (compare == undefined)
+			compare = 1;
+
+		for (i = 0; i < compare; i++)
+			document.write("<br>");
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	tentativas=1;
+	while(tentativas <= 3)
+	{	
+		var chute = parseInt(prompt("Digite o seu chute!"));
+		
+		if (numeroPensado == chute)
+		{
+			document.write("Você acertou!");
+			pulaLinha(2);
+			break;
+		}
+		else
+		{
+			document.write("Você errou!");
+			pulaLinha(2);
+		}
+		tentativas++;
+	}
+	document.write("O numero pensado foi "+numeroPensado);
+	
+</script>
